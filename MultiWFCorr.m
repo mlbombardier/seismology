@@ -7,14 +7,20 @@
 %  toolbox, GISMO. There are five locations where manual entry is needed.
 %  The master event needs to be the same length as all the other sections.
 %  Due to the rounding-down of the nwf variable, the length of the master
-%  event should always be too short if it is not the same. The script takes
-%  care of that.
+%  event should always be slightly too short if it is not the same. The script
+%  takes care of that.
 
 %  QUALIFIER
 %  This script computes the correlation coefficients and lag times of all
 %  sections compared to all other sections. Alas, we throw out almost all
 %  of that when we create masterCo, which includes only the coefficients
 %  from the comparisons between each section with the master event.
+
+%  Moving forward: fix this issue of inefficiency, possibly by 
+%  using LTA/STA to locate points of interest; add an option 
+%  to compare waveforms in frequency space; test its scaleability;
+%  minimize required manual inputs; create a master event by 
+%  stacking.
 
 
 
