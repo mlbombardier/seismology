@@ -123,7 +123,7 @@ window = ceil(1000*fNy);
 step = ceil(200*fNy);
 
 %  SETUP spectrogram(data,window,noverlap,nfft,samplerate)
-%  create a spectrogram of the corr coeffs to see fq of pulses
+%  create a spectrogram of all the corr coeffs to see fq of pulses
 figure('Position',[0,400,1500,350])
 spectrogram(masterCo,window,window-step,2^nextpow2(window),fSamp,'yaxis')
 colormap(jet)
