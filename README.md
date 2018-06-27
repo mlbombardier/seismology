@@ -17,3 +17,9 @@ Master: the filtered master event against which all sections are correlated
 Coeffs: all the correlation coefficients from correlation with the master event
 
 SpecCoeffs: spectrogram of Coeffs
+
+This repository also includes the final deliverable for the Experiential Learning
+credit required by my undergraduate degree at Quest University Canada. This analysis
+explores the spectral content and timing variation of the seismic pulses observed
+on Mt Rainier in November 2014. This document is merely a snapshot of my knowledge on
+seismology and signal processing 3 weeks after beginning my self-guided study of the subject.
