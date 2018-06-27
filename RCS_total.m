@@ -1,6 +1,5 @@
-% plot and spectrogram of filtered RCS data from IRIS
-
-%close all
+%  This script uses irisFetch to collect data from IRIS. A FIR filter is used to lowpass
+%  the data in order to plot. A spectrogram is made from the unfiltered data.
 
 ct = ChannelTag('UW','RCS','*','EHZ');
 tr = irisFetch.Traces(ct.network,ct.station,ct.location,ct.channel,'2014-11-25 20:00:00','2014-11-25 23:59:59');
@@ -10,6 +9,7 @@ fSamp = tr.sampleRate;
 fNy = fSamp/2.0;
 fhi = 20;
 
+% create filter parameters
 window = ceil(50.0*fNy);
 step = ceil(10.0*fNy);
 t = linspace(0.0, size(data,1)/fSamp, size(data,1));
