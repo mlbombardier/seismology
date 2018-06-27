@@ -1,6 +1,9 @@
 # seismology
 
-This repository includes a MATLAB script and the four figures that are produced from it.
+This repository includes a MATLAB script and the four figures that are produced from it
+in two formats. The .tif files are supposedly too large to view in GitHub but the 
+PDF of the image can be viewd just fine. .tif files can be downloaded for larger
+viewing.
 
 Data: the full raw, unfiltered data
 
